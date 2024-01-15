@@ -119,6 +119,9 @@ class UnifiedParsingSegmenter(BaseSegmenter):
                 (len(segmodel.labeldata['material']) - 1))
         # We only use parts for these three types of objects, for efficiency.
         partobjects = ['sky', 'building', 'person']
+        # partobjects_dict, _ = self.get_label_and_category_names()
+        # partobjects = list(dict(partobjects_dict).keys())
+
         partnumbers = {}
         partnames = []
         objectnumbers = {k: v
